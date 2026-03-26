@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación UD.03 - Despliegue</title>
+    <style>
+        /* Variables de color para un diseño moderno */
+        :root {
+            --sidebar-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
 
+        body {
+            display: flex;
+            margin: 0;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        /* Menú lateral decorativo */
+        nav {
+            width: 250px;
+            background-color: var(--sidebar-color);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        /* Contenedor principal */
+        main {
+            flex: 1;
+            padding: 40px;
+            max-width: 900px;
+        }
+
+        .header-banner {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-bottom: 4px solid var(--accent-color);
+        }
+
+        h1 { margin: 0; color: var(--sidebar-color); }
+        h2 { color: var(--accent-color); border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+
+        .step-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        code {
+            background: #eee;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        /* Adaptabilidad móvil */
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            nav { width: 100%; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h3>Contenido</h3>
+    <ul>
+        <li>Introducción</li>
+        <li>Configuración</li>
+        <li>Despliegue</li>
+    </ul>
+</nav>
+
+<main>
+    <div class="header-banner">
+        <h1>Práctica U.D. 03</h1>
+        <p>Publicación de sitios estáticos y documentación online.</p>
+    </div>
+
+    <section class="step-box">
+        <h2>Descripción del Ejercicio</h2>
+        <p>Esta página sirve como ejemplo de un sitio estático desplegado automáticamente mediante <strong>GitHub Actions</strong>.</p>
+    </section>
+
+    <section class="step-box">
+        <h2>Tecnologías Utilizadas</h2>
+        <ul>
+            <li><strong>HTML5:</strong> Para la estructura semántica.</li>
+            <li><strong>CSS3:</strong> Flexbox para el layout y variables para el color.</li>
+            <li><strong>GitHub Pages:</strong> Hosting gratuito y automatizado.</li>
+        </ul>
+    </section>
+</main>
+
+</body>
+</html>
